@@ -1,0 +1,407 @@
+[
+    {
+        "name": "Специалист по тестированию (QА Engineer)",
+        "link": "https://hh.ru/vacancy/123821411",
+        "salary": {
+            "from": 0,
+            "to": 130000
+        },
+        "description": "Имеете опыт от 1 года в тестировании коммерческого продукта. Имеете опыт написания тест кейсов по технической документации. Знаете жизненный цикл..."
+    },
+    {
+        "name": "Тестировщик",
+        "link": "https://hh.ru/vacancy/123745235",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Понимание жизненного цикла разработки программного обеспечения и жизненного цикла тестирования. Готовность и способность быстро учиться, желание разобраться в продуктах компании..."
+    },
+    {
+        "name": "Программист Frontend VueJS",
+        "link": "https://hh.ru/vacancy/123396622",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Опыт работы с VueJS не менее 3 лет. Уверенное владение HTML, CSS и препроцессорами CSS. Опыт адаптивной кроссбраузерной вёрстки. "
+    },
+    {
+        "name": "Программист (Junior - младший разработчик)",
+        "link": "https://hh.ru/vacancy/122717929",
+        "salary": {
+            "from": 50000,
+            "to": 70000
+        },
+        "description": "Знание одного из объектно-ориентированного языка программирования, к примеру: <highlighttext>C++</highlighttext>\\C#, Delphi, Python, Pascal, 1С. Знание работы с СУБД..."
+    },
+    {
+        "name": "CV / ML / DL инженер (джун)",
+        "link": "https://hh.ru/vacancy/123819967",
+        "salary": {
+            "from": 100000,
+            "to": 150000
+        },
+        "description": "Опыт решения CV задач, чем ближе к проду - тем лучше. Понимание ключевых практик современного ML/DL. Уверенное знание Python +..."
+    },
+    {
+        "name": "Разработчик C++ (middle)",
+        "link": "https://hh.ru/vacancy/123754761",
+        "salary": {
+            "from": 0,
+            "to": 250000
+        },
+        "description": "Опыт коммерческой разработки на <highlighttext>C++</highlighttext> от 2-3 лет. Отличное знание <highlighttext>C++</highlighttext>17/20, STL, умение применять современные идиомы языка. "
+    },
+    {
+        "name": "Инженер-программист",
+        "link": "https://hh.ru/vacancy/123761950",
+        "salary": {
+            "from": 70000,
+            "to": 0
+        },
+        "description": "Опыт разработки с применением любого объектно-ориентированным языка(Java, C#, <highlighttext>C++</highlighttext>, Python и т.д.). - Базовые знания JavaScript, HTML, CSS. - "
+    },
+    {
+        "name": "Go разработчик (middle+)",
+        "link": "https://hh.ru/vacancy/123669840",
+        "salary": {
+            "from": 230000,
+            "to": 280000
+        },
+        "description": "Опыт разработки на одном из backend языков (<highlighttext>C++</highlighttext>, C#, Java) будет преимуществом. Понимание синтаксиса баз данных PostgreSQL, Redis, SQLite. "
+    },
+    {
+        "name": "IOS разработчик",
+        "link": "https://hh.ru/vacancy/123695334",
+        "salary": {
+            "from": 0,
+            "to": 250000
+        },
+        "description": "Понимание жизненного цикла разработки ПО. Опыт разработки с использованием технологии Bluetooth. Знание иных языков программирования, в первую очередь С/<highlighttext>С++</highlighttext>..."
+    },
+    {
+        "name": "Разработчик C++",
+        "link": "https://hh.ru/vacancy/123737793",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Что хотели бы видеть в опыте: Владение <highlighttext>С++</highlighttext> 17. Опыт настройки сборки проектов (cmake). Опыт самостоятельной разработки сетевых многопоточных приложений. "
+    },
+    {
+        "name": "Системный аналитик",
+        "link": "https://hh.ru/vacancy/123661830",
+        "salary": {
+            "from": 4500,
+            "to": 6000
+        },
+        "description": "Уровень Английского от B2. Умение читать и понимать код на <highlighttext>С++</highlighttext>/С#/Java. Опыт работы с торговыми платформами MetaTrader..."
+    },
+    {
+        "name": "Инженер исследовательского тестирования",
+        "link": "https://hh.ru/vacancy/123573929",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Опыт работы с PostgreSQL. Знание какого-либо языка программирования Python / C / <highlighttext>C++</highlighttext>. Опыт написания bash-скриптов. Опыт работы с системами..."
+    },
+    {
+        "name": "Разработчик Python в IT-компанию Productlab.pro",
+        "link": "https://hh.ru/vacancy/123542171",
+        "salary": {
+            "from": 25000,
+            "to": 50000
+        },
+        "description": "Ты должен знать: ️ React (Базовые корректировки на основе примеров). Ты подойдешь, если: ️ Любишь предлагать крутые идеи. Не знаешь ответственности. "
+    },
+    {
+        "name": "Разработчик QT (C++)",
+        "link": "https://hh.ru/vacancy/123654907",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Опыт разработки приложений на языке <highlighttext>С++</highlighttext> с использованием фреймворка Qt. Знание С/<highlighttext>С++</highlighttext>, фреймворка Qt (5+). Понимание работы с..."
+    },
+    {
+        "name": "Бизнес / системный аналитик",
+        "link": "https://hh.ru/vacancy/123799183",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Опыт анализа и проектирования архитектуры ПО. Знание основ работы с технологическим стеком: <highlighttext>C++</highlighttext>, Qt, QML. Опыт взаимодействия с объектами измерительного..."
+    },
+    {
+        "name": "Инженер по тестированию",
+        "link": "https://hh.ru/vacancy/123307508",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Опыт разработки или тестирования в сфере робототехники. Опыт программирования на Python/<highlighttext>C++</highlighttext>. Опыт работы с программно-аппaратными комплексами, тестирование подобных..."
+    },
+    {
+        "name": "Unreal Engine Devoloper",
+        "link": "https://hh.ru/vacancy/123668197",
+        "salary": {
+            "from": 90000,
+            "to": 110000
+        },
+        "description": "Уверенное знание Unreal Engine 5. Умение разбираться в чужом коде. Умение работать с системами контроля версий: Git. Умение самостоятельно строить..."
+    },
+    {
+        "name": "QA инженер-тестировщик",
+        "link": "https://hh.ru/vacancy/122994412",
+        "salary": {
+            "from": 80000,
+            "to": 110000
+        },
+        "description": "Способность корректно и точно описывать выявленные в процессе тестирования дефекты. Написание тест-кейсов. Владение <highlighttext>C++</highlighttext>,Bash,Python,Qtest. "
+    },
+    {
+        "name": "Инженер-программист",
+        "link": "https://hh.ru/vacancy/123577715",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "среднее специальное или высшее профильное образование. - знание С на уровне программирования микроконтроллеров (STM). - базовые знания схемотехники. - знание <highlighttext>С++</highlighttext> и Python."
+    },
+    {
+        "name": "DevOps-инженер",
+        "link": "https://hh.ru/vacancy/123807979",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Понимание процесса сборки приложений, написанных на Go, Python, C/<highlighttext>C++</highlighttext>. Опыт написания dockerfile и helm чартов с нуля. "
+    },
+    {
+        "name": "Программист Python Junior (BigData) в офис",
+        "link": "https://hh.ru/vacancy/123637852",
+        "salary": {
+            "from": 65000,
+            "to": 120000
+        },
+        "description": "Умение вникать в большие объёмы кода. Знание основ Git. Знание NLP, <highlighttext>С++</highlighttext> будет плюсом. Знание SQL будет плюсом. "
+    },
+    {
+        "name": "Middle Python-разработчик (IoT/Embedded)",
+        "link": "https://hh.ru/vacancy/123839091",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Знание и опыт разработки на одном из языков - C/<highlighttext>C++</highlighttext>. Опыт написания Python-расширений на C/<highlighttext>C++</highlighttext>, Python. "
+    },
+    {
+        "name": "Middle ML Engineer (Computer Vision & NLP, Python / Golang, on-premise)",
+        "link": "https://hh.ru/vacancy/123763377",
+        "salary": {
+            "from": 350000,
+            "to": 0
+        },
+        "description": "2+ года коммерческого опыта в applied ML / CV / NLP. Английский B2 и выше — умение читать техническую документацию, писать..."
+    },
+    {
+        "name": "Системный администратор Windows",
+        "link": "https://hh.ru/vacancy/123105693",
+        "salary": {
+            "from": 250000,
+            "to": 350000
+        },
+        "description": "Свободное владение PowerShell.  Дополнительно приветствуется. Знание S2D. Владение C# / <highlighttext>C++</highlighttext> / Python. Знание способов улучшения безопасности MS Windows. "
+    },
+    {
+        "name": "Системный аналитик",
+        "link": "https://hh.ru/vacancy/123716763",
+        "salary": {
+            "from": 150000,
+            "to": 150000
+        },
+        "description": "Наличие высшего или среднего технического образования. Опыт работы системным аналитиком в проектах по разработке программного обеспечения от 2-х лет. "
+    },
+    {
+        "name": "Инженер-программист",
+        "link": "https://hh.ru/vacancy/123568174",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Наличие опыта работы от 1 года в роли разработчика .NET. Знание зыков программирования: <highlighttext>С++</highlighttext>, C# Framework v4.5 и..."
+    },
+    {
+        "name": "Программист",
+        "link": "https://hh.ru/vacancy/123479049",
+        "salary": {
+            "from": 80000,
+            "to": 0
+        },
+        "description": "Знание основ программирования. Знание основ С/<highlighttext>С++</highlighttext> или JavaScript. Знание Linux является плюсом. Знание Qt/QML является плюсом. "
+    },
+    {
+        "name": "Младший разработчик",
+        "link": "https://hh.ru/vacancy/123256918",
+        "salary": {
+            "from": 60000,
+            "to": 0
+        },
+        "description": "Понимания принципов объектно-ориентированного программирования, знание одного или нескольких языков высокого уровня (<highlighttext>C++</highlighttext>, java, pascal). Ответственность, самостоятельность, инициативность. "
+    },
+    {
+        "name": "DevOps-инженер",
+        "link": "https://hh.ru/vacancy/123752679",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Уверенное знание Linux (Debian, Ubuntu). Умение работать с BareMetal (не пугают ipmi или задачи \"запустить ресинк рейда\"). Опыт работы с..."
+    },
+    {
+        "name": "Middle разработчик систем компьютерного зрения (CV)",
+        "link": "https://hh.ru/vacancy/123593874",
+        "salary": {
+            "from": 175000,
+            "to": 0
+        },
+        "description": "Опыт разработки на Python (от 2–3 лет). Опыт работы с OpenCV, NumPy, SciPy и другими библиотеками для обработки изображений. "
+    },
+    {
+        "name": "Supply Chain Manager / Менеджер по логистике",
+        "link": "https://hh.ru/vacancy/108480158",
+        "salary": {
+            "from": 170000,
+            "to": 0
+        },
+        "description": "Уверенный пользователь Excel. Опыт программирования (Python/Visual Basic/<highlighttext>C++</highlighttext> и др.) и работы с Power BI будет преимуществом. "
+    },
+    {
+        "name": "Программист-разработчик",
+        "link": "https://hh.ru/vacancy/123660788",
+        "salary": {
+            "from": 55000,
+            "to": 0
+        },
+        "description": "Профильное образование. Знание и понимание принципов ООП. Уверенные знания любого из языков программирования ООП. Навыки работы с СУБД (MySQL, MS..."
+    },
+    {
+        "name": "Android-разработчик",
+        "link": "https://hh.ru/vacancy/123763371",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "...на языке Java от 3-х лет (Android SDK, NDK <highlighttext>C++</highlighttext>). Высшее образование в области информационных технологий или связанных специальностей. "
+    },
+    {
+        "name": "Системный Java-разработчик",
+        "link": "https://hh.ru/vacancy/123614712",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Знание Java, но можно и хороший опыт на C# или <highlighttext>C++</highlighttext> и желание переучиться на Java. Понимание и применение на..."
+    },
+    {
+        "name": "Программист Python / C / C++ (промышленное и научное оборудование)",
+        "link": "https://hh.ru/vacancy/123741165",
+        "salary": {
+            "from": 130000,
+            "to": 170000
+        },
+        "description": "Хорошее знание ОС Linux. - Знание C и <highlighttext>C++</highlighttext> (последние стандарты не требуются) и умение отлаживать программы на этих языках. - "
+    },
+    {
+        "name": "Разработчик frontend, Qt",
+        "link": "https://hh.ru/vacancy/123649294",
+        "salary": {
+            "from": 125700,
+            "to": 0
+        },
+        "description": "Знание <highlighttext>С++</highlighttext>, структур данных. - Понимание MVC. - Английский на уровне чтения технической документации. - Опыт работы с Git. Дополнительно приветствуется: - Опыт работы..."
+    },
+    {
+        "name": "Старший разработчик frontend, Qt",
+        "link": "https://hh.ru/vacancy/123649419",
+        "salary": {
+            "from": 224900,
+            "to": 0
+        },
+        "description": "Отличное знание <highlighttext>С++</highlighttext>, включая последние изменения стандарта. - Отличное владение алгоритмами и структурами данных. - Понимание MVC. - Английский на уровне чтения технической..."
+    },
+    {
+        "name": "Senior software developer C / C++ / Rust",
+        "link": "https://hh.ru/vacancy/123842954",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Уверенно владеете языком C/<highlighttext>C++</highlighttext>/Rust и опыт системного программирования от 3-х лет. Имеете хорошее понимание внутреннего устройства операционных..."
+    },
+    {
+        "name": "Рекрутер в IT (Quantitative Researchers / Алготрейдеры / IT подбор) / IT-recruiter",
+        "link": "https://hh.ru/vacancy/123672775",
+        "salary": {
+            "from": 300000,
+            "to": 0
+        },
+        "description": "Имеет опыт в IT-рекрутинге от 1 года. Работал с Quantitative Researchers или в IT-подборе сложных и узких специалистов..."
+    },
+    {
+        "name": "Сетевой администратор (телеком)",
+        "link": "https://hh.ru/vacancy/123691982",
+        "salary": {
+            "from": 150000,
+            "to": 200000
+        },
+        "description": "Знание хотя бы двух из языков программирования\" Perl, Python, Golang, <highlighttext>C++</highlighttext>. Знание принципов работы сетей и протоколов передачи данных. "
+    },
+    {
+        "name": "Senior QA Engineer / Тестировщик / Аналитик",
+        "link": "https://hh.ru/vacancy/123431120",
+        "salary": {
+            "from": 150000,
+            "to": 0
+        },
+        "description": "...Будет преимуществом: - Знание сетевых протоколов (TCP/UDP/Websocket). - Опыт WEB UI тестирования (Selenium, DevTools). - Базовое понимание С/<highlighttext>С++</highlighttext> (анализ кода)."
+    },
+    {
+        "name": "Middle Python Developer",
+        "link": "https://hh.ru/vacancy/123269173",
+        "salary": {
+            "from": 150000,
+            "to": 0
+        },
+        "description": "Владение Linux-ом на уровне админа localhost-а (docker/podman/…). Опыт программирования на С/<highlighttext>C++</highlighttext>, опыт применения Python С API. "
+    },
+    {
+        "name": "DevOps-инженер (RuBackup)",
+        "link": "https://hh.ru/vacancy/123750505",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Знание git. Опыт сборки .deb .rpm пакетов из исходного кода (<highlighttext>С++</highlighttext>, Python, Go). Опыт работы с российскими ОС (Astra Linux..."
+    },
+    {
+        "name": "Программист Микроконтроллеров",
+        "link": "https://hh.ru/vacancy/122782433",
+        "salary": {
+            "from": 600000,
+            "to": 0
+        },
+        "description": "Навыки работы с отечественными МК рассматриваются как преимущество. Уверенное знание <highlighttext>С++</highlighttext>. Знание английского языка на уровне чтения технической документации. "
+    },
+    {
+        "name": "Инженер-программист",
+        "link": "https://hh.ru/vacancy/123844576",
+        "salary": {
+            "from": 0,
+            "to": 0
+        },
+        "description": "Высшее техническое или математическое образование. Опыт разработки на Rust/С/<highlighttext>C++</highlighttext>/C#. Знание и опыт работы с Qt или другими..."
+    }
+]
