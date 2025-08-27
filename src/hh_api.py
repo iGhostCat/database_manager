@@ -1,4 +1,3 @@
-from abc import ABC, abstractmethod
 
 import requests
 
@@ -8,14 +7,30 @@ class HH_Parser:
         params = {"sort_by": "by_vacancies_open", "per_page": 10}
         response = requests.get("https://api.hh.ru/employers/", params = params)
         response.raise_for_status()
-        return response.json()["items"]
+        data = response.json()["items"]
+        return {"id": data["id"], "name": data["name"]}
 
 
     def get_vacancies_by_employer_id(self, employer_id):
         params = {"employer_id": employer_id, "per_page": 50}
         response = requests.get('https://api.hh.ru/vacancies', params = params)
         response.raise_for_status()
-        return response.json()["items"]
+        data = response.json()["items"]
+        if data["salary"]:
+            if data["salary"]["from"] and data["salary"]["to"] :
+                salary_from = data["salary"]["from"]
+                salary_to = data["salary"]["to"]
+            elif data["salary"]["from"] and not data["salary"]["to"]:
+                salary_from = data["salary"]["from"]
+                salary_to = salary_from
+            elif data["salary"]["to"] and not data["salary"]["from"]:
+                salary_to = data["salary"]["to"]
+                salary_from = salary_to
+            else:
+                salary_from = 0
+                salary_to = 0
+
+
 
 
 if __name__ == '__main__':
