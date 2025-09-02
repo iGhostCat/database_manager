@@ -23,21 +23,26 @@ class HH_Parser:
         salary_to = 0
         vacancies = []
         for vacancy in data:
-            if data["salary"]:
-                if data["salary"]["from"] and data["salary"]["to"] :
-                    salary_from = data["salary"]["from"]
-                    salary_to = data["salary"]["to"]
-                elif data["salary"]["from"] and not data["salary"]["to"]:
-                    salary_from = data["salary"]["from"]
+            if vacancy["salary"]:
+                if vacancy["salary"]["from"] and vacancy["salary"]["to"] :
+                    salary_from = vacancy["salary"]["from"]
+                    salary_to = vacancy["salary"]["to"]
+                elif vacancy["salary"]["from"] and not vacancy["salary"]["to"]:
+                    salary_from = vacancy["salary"]["from"]
                     salary_to = salary_from
-                elif data["salary"]["to"] and not data["salary"]["from"]:
-                    salary_to = data["salary"]["to"]
+                elif vacancy["salary"]["to"] and not vacancy["salary"]["from"]:
+                    salary_to = vacancy["salary"]["to"]
                     salary_from = salary_to
                 else:
                     salary_from = 0
                     salary_to = 0
-            vacancies.append({"id": data["id", "name": data["name"], "salary_from": salary_from, "salary_to": salary_to, "url": data["alternate_url"]]})
-
+            vacancies.append({
+                "id": vacancy["id"],
+                "name": vacancy["name"],
+                "salary_from": salary_from,
+                "salary_to": salary_to,
+                "url": vacancy["alternate_url"]
+            })
         return vacancies
 
 

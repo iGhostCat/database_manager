@@ -18,11 +18,26 @@ def create_tables(db_name):
     params = config()
     with psycopg2.connect(dbname = db_name, **params) as conn:
         with conn.cursor() as cur:
-            cur.execute("CREATE TABLE employers ("
-                        "id int PRIMARY KEY,"
-                        "name varchar(255) NOT NULL,")
+            #Создание таблицы работодателей
+            cur.execute("""
+                            CREATE TABLE employers (
+                                id INTEGER PRIMARY KEY,
+                                name VARCHAR(255) NOT NULL
+                            )
+                        """)
+            # Второй запрос для создания таблицы вакансий
+            cur.execute("""
+                            CREATE TABLE vacancies (
+                                id int PRIMARY KEY
+                                name varchar,
+                                employer_id INTEGER REFERENCES employers(id),
+                                salary_from int,
+                                salary_to int,
+                                url varchar
+                            )
+                        """)
     conn.close()
-        #Второй запрос для создания таблицы вакансий
+
 
 def insert_employers(db_name):
     params = config()
@@ -32,4 +47,24 @@ def insert_employers(db_name):
         with conn.cursor() as cur:
             for employer in employers:
                 cur.execute("INSERT INTO employers VALUES (%s, %s)", (employer["id"], employer["name"] ))
+    conn.close()
+
+def insert_vacancies(db_name):
+    params = config()
+    hh_parser = HH_Parser()
+    employers = hh_parser.get_employers()
+    all_vacancies = []
+    for employer in employers:
+        vacancies = hh_parser.get_vacancies_by_employer_id(employer["id"])
+        all_vacancies.append(vacancies)
+    with psycopg2.connect(dbname=db_name, **params) as conn:
+        with conn.cursor() as cur:
+            for vac in all_vacancies:
+                cur.execute("INSERT INTO vacancies VALUES (%s, %s, %s, %s, %s)",
+                            (vac["id"],
+                             vac["name"],
+                             vac["employer_id"],
+                             vac["salary_from"],
+                             vac["salary_to"],
+                             vac["url"]))
     conn.close()
