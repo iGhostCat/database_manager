@@ -28,7 +28,7 @@ def create_tables(db_name):
             # Второй запрос для создания таблицы вакансий
             cur.execute("""
                             CREATE TABLE vacancies (
-                                id int PRIMARY KEY
+                                id int PRIMARY KEY,
                                 name varchar,
                                 employer_id INTEGER REFERENCES employers(id),
                                 salary_from int,
@@ -49,22 +49,38 @@ def insert_employers(db_name):
                 cur.execute("INSERT INTO employers VALUES (%s, %s)", (employer["id"], employer["name"] ))
     conn.close()
 
+
 def insert_vacancies(db_name):
     params = config()
     hh_parser = HH_Parser()
     employers = hh_parser.get_employers()
     all_vacancies = []
+
+    # Собираем все вакансии
     for employer in employers:
         vacancies = hh_parser.get_vacancies_by_employer_id(employer["id"])
-        all_vacancies.append(vacancies)
+        for vacancy in vacancies:
+            # Добавляем employer_id в каждую вакансию
+            vacancy["employer_id"] = employer["id"]  # ← Вот это важно!
+            all_vacancies.append(vacancy)
+
     with psycopg2.connect(dbname=db_name, **params) as conn:
         with conn.cursor() as cur:
-            for vac in all_vacancies:
-                cur.execute("INSERT INTO vacancies VALUES (%s, %s, %s, %s, %s)",
-                            (vac["id"],
-                             vac["name"],
-                             vac["employer_id"],
-                             vac["salary_from"],
-                             vac["salary_to"],
-                             vac["url"]))
-    conn.close()
+            for vacancy in all_vacancies:
+                try:
+                    cur.execute("""
+                        INSERT INTO vacancies (id, name, employer_id, salary_from, salary_to, url) 
+                        VALUES (%s, %s, %s, %s, %s, %s)
+                        ON CONFLICT (id) DO NOTHING
+                    """, (
+                        vacancy["id"],
+                        vacancy["name"],
+                        vacancy["employer_id"],  # ← Теперь здесь будет значение
+                        vacancy.get("salary_from", 0),
+                        vacancy.get("salary_to", 0),
+                        vacancy.get("url", "")
+                    ))
+                except Exception as e:
+                    print(f"Ошибка при вставке вакансии {vacancy['id']}: {e}")
+
+        conn.commit()
