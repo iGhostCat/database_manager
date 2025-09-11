@@ -28,12 +28,12 @@ def create_tables(db_name):
             # Второй запрос для создания таблицы вакансий
             cur.execute("""
                             CREATE TABLE vacancies (
-                                id int PRIMARY KEY,
-                                name varchar,
+                                id INTEGER PRIMARY KEY,
+                                name VARCHAR(255) NOT NULL,
                                 employer_id INTEGER REFERENCES employers(id),
-                                salary_from int,
-                                salary_to int,
-                                url varchar
+                                salary_from INTEGER,
+                                salary_to INTEGER,
+                                url VARCHAR(500)
                             )
                         """)
     conn.close()

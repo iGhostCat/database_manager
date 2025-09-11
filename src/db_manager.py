@@ -1,12 +1,16 @@
 from config import config
 import psycopg2
 from src.hh_api import HH_Parser
+from src.utils import create_tables, create_database, insert_employers, insert_vacancies
 
 class DB_Manager:
     def __init__(self, db_name):
         self.__db_name = db_name
 
     def __execute_query(self, query):
+        '''
+        Общий утилитарный метод для выполнения SQL-запросов
+        '''
         params = config()
         with psycopg2.connect(dbname = self.__db_name, **params) as conn:
             with conn.cursor() as cur:
@@ -18,8 +22,7 @@ class DB_Manager:
     def get_companies_and_vacancies_count(self):
         """
         Получает список всех компаний и количество вакансий у каждой компании.
-        Returns:
-            list: Список словарей с названием компании и количеством вакансий
+
         """
         query = """
             SELECT e.name, COUNT(v.id) as vacancies_count
@@ -58,6 +61,9 @@ class DB_Manager:
         return self.__execute_query(query)
 
     def get_avg_salary(self):
+        '''
+        Получает среднюю зарплату по всем вакансиям
+        '''
         query_avg_salary_from = 'SELECT AVG(salary_from) AS INTEGER FROM vacancies'
         query_avg_salary_to = 'SELECT AVG(salary_to) AS INTEGER FROM vacancies'
 
@@ -70,11 +76,7 @@ class DB_Manager:
 
     def get_vacancies_with_higher_salary(self):
         '''
-        query_avg_salary_from = 'SELECT AVG(salary_from) AS INTEGER FROM vacancies'
-        query_avg_salary_to = 'SELECT AVG(salary_to) AS INTEGER FROM vacancies'
-
-        avg_salary_from = float(self.__execute_query(query_avg_salary_from)[0][0])
-        avg_salary_to = float(self.__execute_query(query_avg_salary_to)[0][0])
+        Получает список вакансий, в которых зарплата выше средней по всем вакансиям
         '''
 
 
@@ -83,6 +85,10 @@ class DB_Manager:
         return self.__execute_query(query)
 
     def get_vacancies_with_keyword(self, keyword):
+        '''
+        Получает вакансии, содержащие в названии ключевые слова
+
+        '''
         params = config()
         query = f"SELECT * FROM vacancies WHERE name ILIKE '%{keyword}%'"
 
@@ -93,3 +99,11 @@ class DB_Manager:
         conn.close()
         return result
 
+if __name__ == '__main__':
+    db_name = "proverka"
+    create_database(db_name)
+    create_tables(db_name)
+    insert_employers(db_name)
+    insert_vacancies(db_name)
+    db_manager = DB_Manager(db_name)
+    print(type(db_manager.get_vacancies_with_keyword('Сварщик')))
