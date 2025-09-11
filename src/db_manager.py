@@ -53,7 +53,7 @@ class DB_Manager:
         query = "SELECT * FROM employers"
         return self.__execute_query(query)
 
-    def vacancies_from_selected_employers(self):
+    def all_vacancies(self):
         query = "SELECT * FROM vacancies"
         return self.__execute_query(query)
 
